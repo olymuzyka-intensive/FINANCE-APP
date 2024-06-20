@@ -1,0 +1,40 @@
+@media (max-width: 375px) {
+    h1 {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+    .home__img {
+        background-size: 270px;
+    }
+    .cards__item {
+        width: 98%;
+        height: 160px;
+    }
+    .transactions_categories__item {
+        font-size: 10px;
+        padding-top: 3px;
+        font-weight: 600;
+        height: 20px;
+        width: 80px;
+        align-items: center;
+    }
+    .transactions__item, .transaction__card {
+        width: 98%;
+       
+    }
+    .transactions__item {
+        padding: 20px;
+    }
+    .cards__add_form {
+        width: 98%;
+    }
+
+    .transaction__title{
+        max-width: 100px;
+    }
+    .transaction__title_active  {
+        word-wrap: break-word;
+        word-break: break-word;
+        width: 98%;
+    }
+}

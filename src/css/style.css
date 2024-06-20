@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-family: "Poppins", sans-serif; 
+}
+
+body, html, #root, .app, .page {
+    height: 100%;
+    min-height:100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    padding-bottom: 50px;
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+.app__bg {
+    background: linear-gradient(180deg, #3cbaf0,#1957c7);
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.container {
+    padding: 35px 24px;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+}
+
+.header h1 {
+    margin-left: 70px;
+    margin: 0 auto;
+}
+
+.header a {
+    padding-top: 5px;
+}
+
+.home__img {
+    background: url(/src/img/homeBg.png) no-repeat center;
+    width: 100%;
+    height: 345px;
+}
+.home a {
+    color: white;
+}
+
+.home .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nav__btn a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 36px;
+    border-radius: 23px;
+    background: #608FDA;
+    text-align: center;
+}
+
+.home__balance h3 {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    opacity: 0.7;
+    letter-spacing:0.16px;
+}
+
+.home__balance_value {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.cards {
+    background: white;
+    height: 100%;
+}
+
+.cards h1 {
+    color: black;
+}
+
+.cards a {
+    color: black;
+}
+
+.cards__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+.card__promo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.cards__item {
+    background: #ECF1FC url(./img/visa.png)right 22px bottom 17px no-repeat;
+    border: 0px;
+    border-radius: 20px;
+    padding: 20px 15px;
+    display: flex;
+    height: 160px;
+    width: 325px;    
+    box-shadow: 0px 4px 10px 0px rgba(34, 60, 80, 0.3);
+    display: flex;
+    flex-direction: row;
+}
+
+.card__title, .card__number  {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card__balance_title  {
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 35px;
+}
+
+.card__balance_number {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card__btn_remove {
+    border: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background: black url(/src/img/remove.svg) no-repeat top 50% left 50%;
+    margin-left: auto;
+    /* margin-right: -10px; */
+    cursor: pointer;
+}
+
+.cards__add {
+    /* display: flex; */
+    text-align: center;
+}
+.cards__btn_add {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background: #ECF1FC url(/src/img/add.svg) no-repeat top 50% left 50%;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.cards__add_form {
+    margin-top: 50px;
+    /* background: #ECF1FC; */
+    border-radius: 20px;
+    /* box-shadow: 0px 4px 10px 0px rgba(36, 51, 63, 0.3); */
+    width: 325px;
+    margin: 50px auto;
+}
+
+.cards__add_form h3 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.form__field h3 {
+    font-size: 16px;
+    padding-top: 16px;
+    font-weight: 500;
+}
+
+.form__field input {
+    border: 0;
+    border-radius: 10px;
+    height: 30px;
+    padding-left: 20px;
+    outline: 1px solid #dbe3f3;
+}
+.form__field select {
+    outline: 1px solid #dbe3f3;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+/* .select {
+    outline: 1px solid #dbe3f3;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+} */
+.form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0px;
+    background: #ECF1FC url(/src/img/send.svg) no-repeat top 50% left 50%;;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+} 
+.transactions svg>path {
+    stroke: white;
+}
+
+.transactions svg>path {
+    stroke: white;
+}
+
+.transactions h1 {
+    color: white;
+}
+
+.transactions_categories__list {
+    padding: 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactions_categories__item {
+    background: white;
+    border-radius: 15px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.transactions_categories__item.active {
+    background: black;
+    color: white;
+}
+
+.transactions__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    padding-bottom: 20px;}
+
+.transactions__item {
+    box-shadow: 0px 4px 10px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 20px;
+    padding: 20px 30px;
+    background: white;
+    width: 327px;
+    min-height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction__item_promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction__value {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transaction__title {
+    font-size: 14px;
+    font-weight: 600;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.transaction__date {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.transactions__add {
+    text-align: center;
+}
+
+.transactions__add h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.transactions__btn_add {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background: #ECF1FC url(/src/img/add.svg) no-repeat top 50% left 50%;
+    cursor: pointer;
+}
+
+.transaction {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.transaction a {
+    color: black;
+}
+
+.transaction h1 {
+    color: black;
+}
+
+.transaction__card {
+    box-shadow: 0px 4px 10px 0px rgba(34, 60, 80, 0.3);
+    border-radius: 20px;
+    padding: 20px 30px;
+    background: #ECF1FC;
+    width: 327px;
+    height: 80px;
+    margin: 0 auto 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction__card_promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction__card_title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transaction__cost {
+    align-self: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transaction__categories {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.transaction__title_active {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.transaction__description {
+    text-align: center;
+    align-self: center;
+    font-size: 10px;
+    max-width: 250px;
+}
+.transaction__btns {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;    
+}
+
+.transaction__edit_form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transaction__edit_form h3 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.transaction__btn_edit {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background: #ECF1FC url(/src/img/edit.svg) no-repeat top 50% left 50%;
+    color: #1957c7;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.transaction__btn_remove {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    background: #ECF1FC url(/src/img/remove2.svg) no-repeat top 50% left 50%;
+    color: #1957c7;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.transaction .form__field select { 
+    display: block;
+width: 100%;
+height: 30px;
+padding-left: 14px;
+}
